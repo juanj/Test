@@ -13,6 +13,8 @@
 		329B395A256087E30044ABF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B3958256087E30044ABF6 /* LaunchScreen.storyboard */; };
 		329B3965256087E30044ABF6 /* MomenryTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B3964256087E30044ABF6 /* MomenryTestTests.swift */; };
 		329B399925608E4D0044ABF6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B399825608E4D0044ABF6 /* AppCoordinator.swift */; };
+		329B399F25608FE70044ABF6 /* ProductsServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B399E25608FE70044ABF6 /* ProductsServiceable.swift */; };
+		329B39A3256090420044ABF6 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B39A2256090420044ABF6 /* ProductsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		329B3964256087E30044ABF6 /* MomenryTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomenryTestTests.swift; sourceTree = "<group>"; };
 		329B3966256087E30044ABF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		329B399825608E4D0044ABF6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		329B399E25608FE70044ABF6 /* ProductsServiceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServiceable.swift; sourceTree = "<group>"; };
+		329B39A2256090420044ABF6 /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				329B399825608E4D0044ABF6 /* AppCoordinator.swift */,
 				329B394D256087E20044ABF6 /* AppDelegate.swift */,
 				329B394F256087E20044ABF6 /* SceneDelegate.swift */,
+				329B39A8256094850044ABF6 /* Networking */,
 				329B3956256087E30044ABF6 /* Assets.xcassets */,
 				329B3958256087E30044ABF6 /* LaunchScreen.storyboard */,
 				329B395B256087E30044ABF6 /* Info.plist */,
@@ -94,6 +99,15 @@
 				329B3966256087E30044ABF6 /* Info.plist */,
 			);
 			path = MomenryTestTests;
+			sourceTree = "<group>";
+		};
+		329B39A8256094850044ABF6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				329B399E25608FE70044ABF6 /* ProductsServiceable.swift */,
+				329B39A2256090420044ABF6 /* ProductsService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,8 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				329B399925608E4D0044ABF6 /* AppCoordinator.swift in Sources */,
+				329B399F25608FE70044ABF6 /* ProductsServiceable.swift in Sources */,
 				329B394E256087E20044ABF6 /* AppDelegate.swift in Sources */,
 				329B3950256087E20044ABF6 /* SceneDelegate.swift in Sources */,
+				329B39A3256090420044ABF6 /* ProductsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
