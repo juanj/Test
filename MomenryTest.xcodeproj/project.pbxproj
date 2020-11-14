@@ -9,23 +9,13 @@
 /* Begin PBXBuildFile section */
 		329B394E256087E20044ABF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B394D256087E20044ABF6 /* AppDelegate.swift */; };
 		329B3950256087E20044ABF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B394F256087E20044ABF6 /* SceneDelegate.swift */; };
-		329B3952256087E20044ABF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B3951256087E20044ABF6 /* ViewController.swift */; };
-		329B3955256087E20044ABF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B3953256087E20044ABF6 /* Main.storyboard */; };
 		329B3957256087E30044ABF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329B3956256087E30044ABF6 /* Assets.xcassets */; };
 		329B395A256087E30044ABF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329B3958256087E30044ABF6 /* LaunchScreen.storyboard */; };
 		329B3965256087E30044ABF6 /* MomenryTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B3964256087E30044ABF6 /* MomenryTestTests.swift */; };
-		329B3970256087E30044ABF6 /* MomenryTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B396F256087E30044ABF6 /* MomenryTestUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		329B3961256087E30044ABF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 329B3942256087E20044ABF6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 329B3949256087E20044ABF6;
-			remoteInfo = MomenryTest;
-		};
-		329B396C256087E30044ABF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 329B3942256087E20044ABF6 /* Project object */;
 			proxyType = 1;
@@ -38,17 +28,12 @@
 		329B394A256087E20044ABF6 /* MomenryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomenryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		329B394D256087E20044ABF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		329B394F256087E20044ABF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		329B3951256087E20044ABF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		329B3954256087E20044ABF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		329B3956256087E30044ABF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		329B3959256087E30044ABF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		329B395B256087E30044ABF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		329B3960256087E30044ABF6 /* MomenryTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomenryTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		329B3964256087E30044ABF6 /* MomenryTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomenryTestTests.swift; sourceTree = "<group>"; };
 		329B3966256087E30044ABF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		329B396B256087E30044ABF6 /* MomenryTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomenryTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		329B396F256087E30044ABF6 /* MomenryTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomenryTestUITests.swift; sourceTree = "<group>"; };
-		329B3971256087E30044ABF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +51,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		329B3968256087E30044ABF6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +59,6 @@
 			children = (
 				329B394C256087E20044ABF6 /* MomenryTest */,
 				329B3963256087E30044ABF6 /* MomenryTestTests */,
-				329B396E256087E30044ABF6 /* MomenryTestUITests */,
 				329B394B256087E20044ABF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +68,6 @@
 			children = (
 				329B394A256087E20044ABF6 /* MomenryTest.app */,
 				329B3960256087E30044ABF6 /* MomenryTestTests.xctest */,
-				329B396B256087E30044ABF6 /* MomenryTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +77,6 @@
 			children = (
 				329B394D256087E20044ABF6 /* AppDelegate.swift */,
 				329B394F256087E20044ABF6 /* SceneDelegate.swift */,
-				329B3951256087E20044ABF6 /* ViewController.swift */,
-				329B3953256087E20044ABF6 /* Main.storyboard */,
 				329B3956256087E30044ABF6 /* Assets.xcassets */,
 				329B3958256087E30044ABF6 /* LaunchScreen.storyboard */,
 				329B395B256087E30044ABF6 /* Info.plist */,
@@ -117,15 +91,6 @@
 				329B3966256087E30044ABF6 /* Info.plist */,
 			);
 			path = MomenryTestTests;
-			sourceTree = "<group>";
-		};
-		329B396E256087E30044ABF6 /* MomenryTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				329B396F256087E30044ABF6 /* MomenryTestUITests.swift */,
-				329B3971256087E30044ABF6 /* Info.plist */,
-			);
-			path = MomenryTestUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +131,6 @@
 			productReference = 329B3960256087E30044ABF6 /* MomenryTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		329B396A256087E30044ABF6 /* MomenryTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 329B397A256087E30044ABF6 /* Build configuration list for PBXNativeTarget "MomenryTestUITests" */;
-			buildPhases = (
-				329B3967256087E30044ABF6 /* Sources */,
-				329B3968256087E30044ABF6 /* Frameworks */,
-				329B3969256087E30044ABF6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				329B396D256087E30044ABF6 /* PBXTargetDependency */,
-			);
-			name = MomenryTestUITests;
-			productName = MomenryTestUITests;
-			productReference = 329B396B256087E30044ABF6 /* MomenryTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +144,6 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					329B395F256087E30044ABF6 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 329B3949256087E20044ABF6;
-					};
-					329B396A256087E30044ABF6 = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 329B3949256087E20044ABF6;
 					};
@@ -221,7 +164,6 @@
 			targets = (
 				329B3949256087E20044ABF6 /* MomenryTest */,
 				329B395F256087E30044ABF6 /* MomenryTestTests */,
-				329B396A256087E30044ABF6 /* MomenryTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,18 +175,10 @@
 			files = (
 				329B395A256087E30044ABF6 /* LaunchScreen.storyboard in Resources */,
 				329B3957256087E30044ABF6 /* Assets.xcassets in Resources */,
-				329B3955256087E20044ABF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		329B395E256087E30044ABF6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		329B3969256087E30044ABF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,7 +192,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				329B3952256087E20044ABF6 /* ViewController.swift in Sources */,
 				329B394E256087E20044ABF6 /* AppDelegate.swift in Sources */,
 				329B3950256087E20044ABF6 /* SceneDelegate.swift in Sources */,
 			);
@@ -272,14 +205,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		329B3967256087E30044ABF6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				329B3970256087E30044ABF6 /* MomenryTestUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,22 +213,9 @@
 			target = 329B3949256087E20044ABF6 /* MomenryTest */;
 			targetProxy = 329B3961256087E30044ABF6 /* PBXContainerItemProxy */;
 		};
-		329B396D256087E30044ABF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 329B3949256087E20044ABF6 /* MomenryTest */;
-			targetProxy = 329B396C256087E30044ABF6 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		329B3953256087E20044ABF6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				329B3954256087E20044ABF6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		329B3958256087E30044ABF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -509,44 +421,6 @@
 			};
 			name = Release;
 		};
-		329B397B256087E30044ABF6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MomenryTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = juanj.MomenryTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MomenryTest;
-			};
-			name = Debug;
-		};
-		329B397C256087E30044ABF6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MomenryTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = juanj.MomenryTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MomenryTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,15 +447,6 @@
 			buildConfigurations = (
 				329B3978256087E30044ABF6 /* Debug */,
 				329B3979256087E30044ABF6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		329B397A256087E30044ABF6 /* Build configuration list for PBXNativeTarget "MomenryTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				329B397B256087E30044ABF6 /* Debug */,
-				329B397C256087E30044ABF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
