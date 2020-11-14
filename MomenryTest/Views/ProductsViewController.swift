@@ -33,6 +33,7 @@ class ProductsViewController: UIViewController {
     }
 
     override func viewDidLoad() {
+        title = "Productos"
         configureTableView()
     }
 
