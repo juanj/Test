@@ -15,6 +15,11 @@ class AppCoordinator {
     }
 
     func start() {
-        navigationController.pushViewController(UIViewController(), animated: false)
+        let productsViewController = ProductsViewController(delegate: self, products: [.init(url: "", name: "Test")])
+        navigationController.pushViewController(productsViewController, animated: false)
     }
+}
+
+extension AppCoordinator: ProductsViewcontrollerDelegate {
+    func didSelectProduct(_ productsViewController: ProductsViewController, product: Product) {}
 }
