@@ -7,10 +7,11 @@
 
 import Foundation
 
-enum ProductsServiceError: Error, LocalizedError {
+enum ProductsServiceError: Error, LocalizedError, CustomStringConvertible {
     case badUrl(String)
     case invalidResponse
     case httpError(code: Int, data: Data?)
+    case noData
 
     var errorDescription: String? {
         switch self {
@@ -23,7 +24,13 @@ enum ProductsServiceError: Error, LocalizedError {
                 return "HTTP Error \(code), Data: \(stringRepresentation)"
             }
             return "HTTP Error \(code)"
+        case .noData:
+            return "No data"
         }
+    }
+
+    var description: String {
+        return errorDescription ?? "Error"
     }
 }
 
@@ -56,6 +63,25 @@ class ProductsService: ProductsServiceable {
                     completion(.failure(ProductsServiceError.httpError(code: response.statusCode, data: data)))
                 }
                 return
+            }
+
+            guard let data = data else {
+                DispatchQueue.main.async {
+                    completion(.failure(ProductsServiceError.noData))
+                }
+                return
+            }
+
+            do {
+                let decoder = JSONDecoder()
+                let response = try decoder.decode(ServerResponse<[Product]>.self, from: data)
+                DispatchQueue.main.async {
+                    completion(.success(response))
+                }
+            } catch let error {
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
             }
         }
 
