@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ProductsServiceable {
-    func getProducts(completion: @escaping (Result<[String], Error>) -> Void)
+    func getProducts(completion: @escaping (Result<ServerResponse<[Product]>, Error>) -> Void)
 }

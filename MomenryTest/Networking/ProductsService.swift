@@ -31,9 +31,9 @@ class ProductsService: ProductsServiceable {
     let baseUrl = "https://marketapp-4e2ef.web.app/"
     private let defaultSession = URLSession(configuration: .default)
 
-    func getProducts(completion: @escaping (Result<[String], Error>) -> Void) {
-        guard let url = URL(string: baseUrl + "api/enums/images") else {
-            completion(.failure(ProductsServiceError.badUrl(baseUrl + "api/enums/images")))
+    func getProducts(completion: @escaping (Result<ServerResponse<[Product]>, Error>) -> Void) {
+        guard let url = URL(string: baseUrl + "api/enums/imagenes") else {
+            completion(.failure(ProductsServiceError.badUrl(baseUrl + "api/enums/imagenes")))
             return
         }
         let task = defaultSession.dataTask(with: url) { (data, response, error) in
