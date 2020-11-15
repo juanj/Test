@@ -23,6 +23,8 @@
 		329B39C625609C160044ABF6 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329B39C425609C160044ABF6 /* ProductTableViewCell.xib */; };
 		329B39CA2560A3C10044ABF6 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B39C92560A3C10044ABF6 /* ImageDownloader.swift */; };
 		329B39CE2560A4250044ABF6 /* CachedImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B39CD2560A4250044ABF6 /* CachedImageDownloader.swift */; };
+		329B39D32560A9010044ABF6 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B39D12560A9000044ABF6 /* ProductDetailViewController.swift */; };
+		329B39D42560A9010044ABF6 /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329B39D22560A9000044ABF6 /* ProductDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		329B39C425609C160044ABF6 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		329B39C92560A3C10044ABF6 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		329B39CD2560A4250044ABF6 /* CachedImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageDownloader.swift; sourceTree = "<group>"; };
+		329B39D12560A9000044ABF6 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		329B39D22560A9000044ABF6 /* ProductDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 				329B39BE25609B990044ABF6 /* ProductsViewController.xib */,
 				329B39C325609C160044ABF6 /* ProductTableViewCell.swift */,
 				329B39C425609C160044ABF6 /* ProductTableViewCell.xib */,
+				329B39D12560A9000044ABF6 /* ProductDetailViewController.swift */,
+				329B39D22560A9000044ABF6 /* ProductDetailViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				329B395A256087E30044ABF6 /* LaunchScreen.storyboard in Resources */,
 				329B39C625609C160044ABF6 /* ProductTableViewCell.xib in Resources */,
 				329B3957256087E30044ABF6 /* Assets.xcassets in Resources */,
+				329B39D42560A9010044ABF6 /* ProductDetailViewController.xib in Resources */,
 				329B39C025609B990044ABF6 /* ProductsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +285,7 @@
 				329B399F25608FE70044ABF6 /* ProductsServiceable.swift in Sources */,
 				329B39C525609C160044ABF6 /* ProductTableViewCell.swift in Sources */,
 				329B39BF25609B990044ABF6 /* ProductsViewController.swift in Sources */,
+				329B39D32560A9010044ABF6 /* ProductDetailViewController.swift in Sources */,
 				329B394E256087E20044ABF6 /* AppDelegate.swift in Sources */,
 				329B3950256087E20044ABF6 /* SceneDelegate.swift in Sources */,
 				329B39CA2560A3C10044ABF6 /* ImageDownloader.swift in Sources */,

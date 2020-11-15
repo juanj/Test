@@ -47,5 +47,7 @@ class AppCoordinator {
 }
 
 extension AppCoordinator: ProductsViewcontrollerDelegate {
-    func didSelectProduct(_ productsViewController: ProductsViewController, product: Product) {}
+    func didSelectProduct(_ productsViewController: ProductsViewController, product: Product) {
+        navigationController.pushViewController(ProductDetailViewController(product: product, imageDownloader: imageDownloader), animated: true)
+    }
 }
