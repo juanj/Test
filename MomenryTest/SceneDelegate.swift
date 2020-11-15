@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene else { return }
 
         let rootNavigationController = UINavigationController()
-        appCoordinator = AppCoordinator(navigationController: rootNavigationController, productsService: ProductsService())
+        appCoordinator = AppCoordinator(navigationController: rootNavigationController, productsService: ProductsService(), imageDownloader: CachedImageDownloader())
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.rootViewController = rootNavigationController

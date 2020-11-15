@@ -21,9 +21,11 @@ class ProductsViewController: UIViewController {
     }
 
     private weak var delegate: ProductsViewcontrollerDelegate?
+    private let imageDownloader: ImageDownloader
 
-    init(delegate: ProductsViewcontrollerDelegate, products: [Product] = []) {
+    init(delegate: ProductsViewcontrollerDelegate, imageDownloader: ImageDownloader, products: [Product] = []) {
         self.delegate = delegate
+        self.imageDownloader = imageDownloader
         self.products = products
         super.init(nibName: nil, bundle: nil)
     }
@@ -61,6 +63,12 @@ extension ProductsViewController: UITableViewDataSource {
 
         let product = products[indexPath.row]
         cell.nameLabel.text = product.name
+
+        if let url = URL(string: product.url) {
+            imageDownloader.downloadImageFromUrl(url) { image in
+                cell.productImageView.image = image
+            }
+        }
 
         return cell
     }

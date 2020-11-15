@@ -12,14 +12,16 @@ class AppCoordinator {
 
     private let navigationController: UINavigationController
     private let productsService: ProductsServiceable
+    private let imageDownloader: ImageDownloader
 
-    init(navigationController: UINavigationController, productsService: ProductsServiceable) {
+    init(navigationController: UINavigationController, productsService: ProductsServiceable, imageDownloader: ImageDownloader) {
         self.navigationController = navigationController
         self.productsService = productsService
+        self.imageDownloader = imageDownloader
     }
 
     func start() {
-        let productsViewController = ProductsViewController(delegate: self, products: [.init(url: "", name: "Test")])
+        let productsViewController = ProductsViewController(delegate: self, imageDownloader: imageDownloader)
         navigationController.pushViewController(productsViewController, animated: false)
 
         self.productsViewController = productsViewController

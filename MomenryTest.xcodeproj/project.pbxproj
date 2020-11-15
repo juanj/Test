@@ -21,6 +21,8 @@
 		329B39C025609B990044ABF6 /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329B39BE25609B990044ABF6 /* ProductsViewController.xib */; };
 		329B39C525609C160044ABF6 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B39C325609C160044ABF6 /* ProductTableViewCell.swift */; };
 		329B39C625609C160044ABF6 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329B39C425609C160044ABF6 /* ProductTableViewCell.xib */; };
+		329B39CA2560A3C10044ABF6 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B39C92560A3C10044ABF6 /* ImageDownloader.swift */; };
+		329B39CE2560A4250044ABF6 /* CachedImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B39CD2560A4250044ABF6 /* CachedImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		329B39BE25609B990044ABF6 /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
 		329B39C325609C160044ABF6 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		329B39C425609C160044ABF6 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		329B39C92560A3C10044ABF6 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		329B39CD2560A4250044ABF6 /* CachedImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				329B399E25608FE70044ABF6 /* ProductsServiceable.swift */,
 				329B39A2256090420044ABF6 /* ProductsService.swift */,
 				329B39B0256095940044ABF6 /* ServerResponse.swift */,
+				329B39C92560A3C10044ABF6 /* ImageDownloader.swift */,
+				329B39CD2560A4250044ABF6 /* CachedImageDownloader.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -267,12 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329B39CE2560A4250044ABF6 /* CachedImageDownloader.swift in Sources */,
 				329B399925608E4D0044ABF6 /* AppCoordinator.swift in Sources */,
 				329B399F25608FE70044ABF6 /* ProductsServiceable.swift in Sources */,
 				329B39C525609C160044ABF6 /* ProductTableViewCell.swift in Sources */,
 				329B39BF25609B990044ABF6 /* ProductsViewController.swift in Sources */,
 				329B394E256087E20044ABF6 /* AppDelegate.swift in Sources */,
 				329B3950256087E20044ABF6 /* SceneDelegate.swift in Sources */,
+				329B39CA2560A3C10044ABF6 /* ImageDownloader.swift in Sources */,
 				329B39B1256095940044ABF6 /* ServerResponse.swift in Sources */,
 				329B39A3256090420044ABF6 /* ProductsService.swift in Sources */,
 				329B39AB256094F50044ABF6 /* Product.swift in Sources */,
