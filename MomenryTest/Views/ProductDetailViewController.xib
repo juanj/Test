@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qsk-mb-P8X">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBg-y7-CNH">
                     <rect key="frame" x="156" y="792" width="102" height="50"/>
@@ -49,11 +49,11 @@
                 <constraint firstItem="YBg-y7-CNH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1PW-ld-5vA"/>
                 <constraint firstItem="qsk-mb-P8X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GQ0-Sv-fqj"/>
                 <constraint firstAttribute="trailing" secondItem="qsk-mb-P8X" secondAttribute="trailing" id="JPK-1Z-KZZ"/>
-                <constraint firstItem="qsk-mb-P8X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LBh-DG-t10"/>
+                <constraint firstItem="qsk-mb-P8X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MQi-TN-iOO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YBg-y7-CNH" secondAttribute="bottom" constant="20" id="ktX-qb-CVz"/>
                 <constraint firstAttribute="bottom" secondItem="qsk-mb-P8X" secondAttribute="bottom" id="pyv-ce-r0J"/>
             </constraints>
-            <point key="canvasLocation" x="142" y="111"/>
+            <point key="canvasLocation" x="140.57971014492756" y="110.49107142857143"/>
         </view>
     </objects>
     <resources>
